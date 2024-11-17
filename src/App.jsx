@@ -1,4 +1,3 @@
-import { useState, useRef } from "react";
 import "./App.css";
 import { motion, useScroll, useSpring } from "framer-motion";
 
@@ -16,7 +15,7 @@ function Item() {
       <div className="outer">
         <div className="header-div" style={{ width: "100%" }}>
           <img
-            src="./Headerdesign.jpg"
+            src="/Headerdesign.jpg"
             width="98%"
             height="260px"
             alt=""
@@ -39,7 +38,7 @@ function Item() {
           </p>
           <img
             className="card1-img"
-            src="./cardimg7.jpg"
+            src="/cardimg7.jpg"
             width="550px"
             height="300px"
             alt=""
@@ -67,7 +66,7 @@ function Item() {
           </p>
           <img
             className="card1-img"
-            src="./cardimg7edit.jpg"
+            src="/cardimg7edit.jpg"
             width="550px"
             height="300px"
             alt=""
@@ -95,7 +94,7 @@ function Item() {
           </p>
           <img
             className="card1-img"
-            src="./cardimg5.jpg"
+            src="/cardimg5.JPG"
             width="550px"
             height="300px"
             alt=""
@@ -171,7 +170,7 @@ function Item() {
 
           <img
             className="card1-img"
-            src="./cardimg2.jpg"
+            src="/cardimg2.JPG"
             width="550px"
             height="300px"
             alt=""
