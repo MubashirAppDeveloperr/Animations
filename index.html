@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation design</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", () => {
+        const rootNode = document.querySelector("#root");
+
+        // Use a MutationObserver to ensure the React components are fully rendered
+        const observer = new MutationObserver(() => {
+          const cursor = document.querySelector(".cursor");
+          var timeout;
+          if (cursor) {
+            console.log("Cursor element found:", cursor);
+
+            document.addEventListener("mousemove", (e) => {
+              let x = e.clientX;
+              let y = e.clientY;
+
+              cursor.style.top = y + "px";
+              cursor.style.left = x + "px";
+              cursor.style.display = "block";
+
+              function mouseStopped() {
+                cursor.style.display = "none";
+              }
+              clearTimeout(timeout);
+              timeout = setTimeout(mouseStopped, 1000);
+            });
+
+            document.addEventListener("mouseout", () => {
+              cursor.style.display = "none";
+            });
+
+            // Stop observing once the cursor is initialized
+            observer.disconnect();
+          }
+        });
+
+        // Observe the root element for changes
+        observer.observe(rootNode, { childList: true, subtree: true });
+      });
+    </script>
+  </body>
+</html>
