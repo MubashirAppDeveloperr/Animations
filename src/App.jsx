@@ -16,7 +16,7 @@ function Item() {
       <div className="outer">
         <div className="header-div" style={{ width: "100%" }}>
           <img
-            src="./images/Headerdesign.jpg"
+            src="./Headerdesign.jpg"
             width="98%"
             height="260px"
             alt=""
@@ -39,7 +39,7 @@ function Item() {
           </p>
           <img
             className="card1-img"
-            src="./images/cardimg7.jpg"
+            src="./cardimg7.jpg"
             width="550px"
             height="300px"
             alt=""
@@ -67,7 +67,7 @@ function Item() {
           </p>
           <img
             className="card1-img"
-            src="./images/cardimg7edit.jpg"
+            src="./cardimg7edit.jpg"
             width="550px"
             height="300px"
             alt=""
@@ -95,7 +95,7 @@ function Item() {
           </p>
           <img
             className="card1-img"
-            src="./images/cardimg5.jpg"
+            src="./cardimg5.jpg"
             width="550px"
             height="300px"
             alt=""
@@ -171,7 +171,7 @@ function Item() {
 
           <img
             className="card1-img"
-            src="./images/cardimg2.jpg"
+            src="./cardimg2.jpg"
             width="550px"
             height="300px"
             alt=""
